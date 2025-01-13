@@ -16,12 +16,15 @@ function Navbar() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          MyApp
+        Kreatoors
         </Typography>
         {!isLoggedIn && (
           <>
             <Button color="inherit" component={Link} to="/login">
               Login
+            </Button>
+            <Button color="inherit" component={Link} to="/register">
+              Register
             </Button>
           </>
         )}
